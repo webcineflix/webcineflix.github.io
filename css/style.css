@@ -27,6 +27,7 @@ body header div.left a img {
 	display: flex;
 	float: left;
 	margin-right: 15px;
+	border-radius: 10px;
 }
 
 body header div.left a h1 {
