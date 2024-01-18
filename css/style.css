@@ -6,3 +6,30 @@
 body {
 	background-color: aquamarine;
 }
+
+body header {
+	margin: 20px;
+	padding: 20px;
+}
+
+body header div.left {
+	display: flex;
+	float: left;
+}
+
+body header div.left a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+body header div.left a img {
+	display: flex;
+	float: left;
+	margin-right: 15px;
+}
+
+body header div.left a h1 {
+	margin-left: 15px;
+	color: blue;
+}
