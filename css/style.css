@@ -4,33 +4,85 @@
 }
 
 body {
-	background-color: aquamarine;
+	background-color: greenyellow;
 }
 
 body header {
-	margin: 20px;
-	padding: 20px;
-}
-
-body header div.left {
+	margin: 30px;
 	display: flex;
-	float: left;
-}
-
-body header div.left a {
-	text-decoration: none;
-	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 }
 
-body header div.left a img {
+body header div.left {
+	order: 1;
 	display: flex;
-	float: left;
-	margin-right: 15px;
-	border-radius: 10px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+body header div.left a {
+	order: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	color: green;
+	text-decoration: none;
+}
+
+body header div.left a img {
+	order: 1;
 }
 
 body header div.left a h1 {
-	margin-left: 15px;
-	color: blue;
+	order: 2;
+}
+
+body header div.right {
+	order: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+body header div.right nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+body header div.right nav ul li {
+	order: 1;
+	list-style-type: none;
+}
+
+body header div.right nav ul li a {
+	padding: 10px;
+	text-decoration: none;
+	background-color: greenyellow;
+	color: green;
+	border: 2px solid green;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+body header div.right nav ul li a:hover {
+	background-color: green;
+	color: greenyellow;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+body header div.right nav ul li a.select {
+	background-color: green;
+	color: greenyellow;
+	border-radius: 10px;
+	font-weight: bold;
 }
